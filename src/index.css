@@ -5,6 +5,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F2F2F2;
+}
+
+#root {
+  height: 100vh;
+}
+
+.main-container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-body {
+  flex-grow: 1;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
 }
 
 code {
