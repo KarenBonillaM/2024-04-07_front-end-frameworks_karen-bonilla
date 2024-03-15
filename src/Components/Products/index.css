@@ -1,0 +1,27 @@
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
+}
+
+.product-card {
+  width: 310px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: #595959;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 300px;
+  height: 280px;
+}
+
+.product-card button {
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
