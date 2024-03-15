@@ -1,0 +1,45 @@
+nav{
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #BFBFBF;
+}
+
+ul {
+  flex-grow: 1;
+  display:flex;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.cart-container {
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 13px 20px;
+  z-index: 2;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search {
+  width: 500px;
+  height: 38px;
+  border-radius: 10px;
+}
