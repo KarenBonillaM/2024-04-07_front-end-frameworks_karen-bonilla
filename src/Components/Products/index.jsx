@@ -1,4 +1,5 @@
 import {useFetch} from "../../hooks/useFetch";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 export function Products() { 
@@ -18,7 +19,7 @@ export function Products() {
         <img src={product.image.url} alt={product.title}></img>
         <p>{product.description}</p>
         <p>Price: {product.price}</p>
-        <button>View Product</button>
+        <Link to={`/product/${product.id}`}><button>View Product</button></Link>
       </div>
     ))};
   </div>
