@@ -3,9 +3,11 @@ import { NavLink} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
+import useProductStore from '../../store';
 
 
 function Nav() {
+  const {getTotalNumberOfItemsInCart} = useProductStore();
   return (
     <div>
       <nav>
@@ -24,6 +26,7 @@ function Nav() {
           </button>
         </div>
         <div className='cart-container'>
+          <div>{getTotalNumberOfItemsInCart()}</div>
           <FontAwesomeIcon icon={faCartShopping} />
         </div>
       </nav>
