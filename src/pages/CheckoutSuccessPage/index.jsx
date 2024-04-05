@@ -1,10 +1,12 @@
 import React from "react";
+import AnimationCheckout from "../../Components/Checkout";
 
 function CheckoutSuccessPage() {
   return (
-    <div>
+    <main className="page-body">
       <h1>Thank you for your purchase!</h1>
-    </div>
+      <AnimationCheckout />
+    </main>
   );
 }
 
