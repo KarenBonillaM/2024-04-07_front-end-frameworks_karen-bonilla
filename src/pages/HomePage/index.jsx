@@ -16,9 +16,12 @@ function HomePage() {
   };
 
   return (
-    <main className='page-body'>
+    <main className='page-body home-page-body'>
+      
+      <div className='intro-container'>
+        <h1>Products</h1>
+      </div>
       <SearchBar onSearch={handleSearch}/>
-      <h1>Home Page</h1>
       <div>
         {isLoading ? (
         <div>Loading products...</div>) : isError ? (<div>Error loading products</div>) : (
