@@ -1,0 +1,52 @@
+.product-container {
+  padding: 40px 0;
+}
+
+.singleProduct-card {
+  width: 100%;
+  display: flex;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.single-product-image {
+  max-width: 500px;
+  max-height: 600px;
+}
+
+.single-product-details {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 10px;
+}
+
+.single-product-details h2 {
+  text-align: center;
+}
+
+.product-info {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.product-info button {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.product-info button:hover {
+  background-color: #D99C2B;
+  color: black;
+}
+
+.review-cart p {
+  margin: 0;
+}
