@@ -1,6 +1,7 @@
 import React from "react";
 import useProductStore from "../../store/index";
 import "./index.css";
+import { NavLink } from "react-router-dom";
 
 
 function Cart() {
@@ -13,20 +14,35 @@ function Cart() {
   console.log(getCartTotal());
   return (
     <div className="cart-container">
-      <h3>Cart</h3>
-      <p>Cart total: {getCartTotal().toFixed(2)}</p>
-      <div>Cart items: {getTotalNumberOfItemsInCart()}
-      </div>
-      {cart.map(({id, title, quantity, price }) => (
-      <div key={`cart-${id}`}>
-        <div>{title}: {quantity}</div>
-        <div>{price}</div>
-        <button onClick={() => handleDeleteItem(id)}>Remove Item</button>
-      </div>
-        ))}
-        <div>
-          <button onClick={clearCart}>Clear Cart</button>
+      <div className="checkout-header">
+        <h3>Shopping Cart</h3>
+        <div>Cart items: {getTotalNumberOfItemsInCart()}
         </div>
+      </div>
+      <div className="cart">
+        <div className="cart-items-container">
+          {cart.map(({id, title, quantity, price, image }) => (
+          <div key={`cart-${id}`} className="cart-item">
+            <div className="img-cart-container">
+              <img src={image.url} alt={title} className="img-cart"></img>
+            </div>
+            <div className="cart-item-info">
+              <div>{title}</div>
+              <div>Quantity: {quantity}</div>
+              <div>{price} SEK</div>
+              <button onClick={() => handleDeleteItem(id)}>Remove Item</button>
+            </div>
+          </div>
+          ))}
+        </div>
+        <div className="checkout-total">
+          <h3>Order Summary</h3>
+          <p>Cart total: {getCartTotal().toFixed(2)} SEK</p>
+          <NavLink to="/checkoutSuccess" className="nav-link checkout-link">
+            <button onClick={clearCart} className="checkout-button">Checkout</button>
+          </NavLink>
+        </div>
+      </div>      
     </div>
   );
 }

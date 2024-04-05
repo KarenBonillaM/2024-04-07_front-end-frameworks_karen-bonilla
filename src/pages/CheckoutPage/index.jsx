@@ -2,7 +2,7 @@ import Cart from "../../Components/Cart";
 
 function CheckoutPage() {
   return (
-    <main className="page-body"> 
+    <main className="checkout-page-main"> 
       <h1>Checkout</h1>
       <Cart />
     </main>
