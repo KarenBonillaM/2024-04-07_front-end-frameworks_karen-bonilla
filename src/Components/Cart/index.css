@@ -92,3 +92,28 @@
   background-color: #D99C2B;
   color: black;
 }
+
+@media screen and
+(max-width: 767px) {
+  .cart {
+    display: block;
+  }
+
+  .cart-items-container, .checkout-total, .cart {
+    margin: auto;
+  }
+
+  .checkout-total {
+    width: 57%;
+  }
+
+  .cart-item-info {
+    font-size: 0.8em;
+  }
+
+  .cart-item-info button {
+    height: 30px;
+    width: 80px;
+    font-size: 0.8em;
+  }
+}

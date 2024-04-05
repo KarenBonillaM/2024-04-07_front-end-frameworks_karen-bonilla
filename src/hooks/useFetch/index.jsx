@@ -3,7 +3,6 @@ import { API_PRODUCTS } from '../../shared/apis';
 
 export function useFetch() {
   const[products, setProducts] = useState([]);
-
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 

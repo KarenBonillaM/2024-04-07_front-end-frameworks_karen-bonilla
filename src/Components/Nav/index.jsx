@@ -1,36 +1,31 @@
 import React from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 import useProductStore from '../../store';
+import SearchBar from '../../hooks/search';
 
 
-function Nav() {
+
+function Nav({ onSearch }) {
   const {getTotalNumberOfItemsInCart} = useProductStore();
+
   return (
-    <div>
       <nav>
-        <ul>
+        <ul className='nav-container'>
           <li>
-            <NavLink to="/home" className="nav-link">The ShopNet</NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="nav-link">Contact</NavLink>
+            <NavLink to="/contact" className="nav-link nav-link-contact">Contact</NavLink>
           </li>
         </ul>
-        <div className='search-container'>
-          <input type='search' placeholder='Search a product' className='search'></input>
-          <button type='submit'>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </button>
-        </div>
+        <NavLink to="/" className="nav-link logo">The ShopNet</NavLink>
         <div className='cart-container'>
-          <div>{getTotalNumberOfItemsInCart()}</div>
-          <FontAwesomeIcon icon={faCartShopping} />
+          <NavLink to="/checkout" className="nav-link cart">
+            <div className='number-items-in-cart'>{getTotalNumberOfItemsInCart()}</div>
+            <FontAwesomeIcon icon={faCartShopping} />
+          </NavLink>
         </div>
       </nav>
-    </div>
   ) 
 }
 

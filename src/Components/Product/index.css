@@ -50,3 +50,16 @@
 .review-cart p {
   margin: 0;
 }
+
+
+@media screen and
+(max-width: 767px) {
+  .single-product-image {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.product-info button {
+  width: 150px;
+}
+}

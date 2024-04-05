@@ -15,10 +15,10 @@ const SearchBar = ({ onSearch }) => {
   }
 
   return (
-    <form className='search-container' onSubmit={handleSubmit}>
+    <form className='search-container' onKeyUp={handleSubmit}>
       <input
         type="text"
-        placeholder="Search a product"
+        placeholder="Search"
         className="search"
         value={query}
         onChange={handleInputChange}
