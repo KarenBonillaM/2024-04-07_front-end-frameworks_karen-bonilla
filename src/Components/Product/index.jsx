@@ -31,7 +31,7 @@ export function Product() {
   return (
     <div className="product-container">
         <div key={product.id} className="singleProduct-card">
-          <div>
+          <div className="single-product-image-container">
             <img src={product.image.url} alt={product.title} className="single-product-image"></img>
           </div>
           <div className="single-product-details">

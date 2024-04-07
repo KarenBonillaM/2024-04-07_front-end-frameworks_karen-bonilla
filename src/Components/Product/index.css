@@ -54,9 +54,28 @@
 
 @media screen and
 (max-width: 767px) {
+  .product-container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .singleProduct-card {
+    display: block;
+  }
+
+  .single-product-image-container {
+    display: grid;
+  }
+
+  /* .single-product-details {
+    width: 88%;
+    margin: auto;
+  } */
+
   .single-product-image {
     max-width: 200px;
     max-height: 300px;
+    justify-self: center;
 }
 
 .product-info button {
