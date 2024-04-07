@@ -1,0 +1,24 @@
+.link-checkout {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 40px 80px;
+  background-color: green;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.link-checkout:hover {
+  color: white;
+  background-color: black;
+}
+
+
+@media screen and
+(max-width: 767px) {
+  .link-checkout {
+    margin: 20px;
+    font-size: 0.8em;
+  }
+}
