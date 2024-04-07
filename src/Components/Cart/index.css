@@ -2,6 +2,12 @@
   margin: 40px 80px;
 }
 
+.checkout-button {
+  position: absolute;
+  right: 10px;
+  background-color: yellow;
+}
+
 .cart {
   display: flex;
 }
@@ -70,11 +76,7 @@
 
 .checkout-total p {
   margin-bottom: 50px;
-}
-
-.checkout-link {
-  position: absolute;
-  right: 10px;
+  font-size: 1.3em;
 }
 
 .checkout-button {
@@ -103,8 +105,17 @@
     margin: auto;
   }
 
+  .img-cart {
+    width: 150px;
+    height: 130px;
+  }
+
+  .cart-items-container {
+    width: 98%;
+  }
+
   .checkout-total {
-    width: 57%;
+    width: 87%;
   }
 
   .cart-item-info {
