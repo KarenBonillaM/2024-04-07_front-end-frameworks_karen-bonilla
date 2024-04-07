@@ -14,12 +14,12 @@ const useProductStore = create((set, get) => ({
   cart: [],
   cartTotal: 0,
   addToCart: (id) => {
-    console.log("Adding product to cart. Product Id", id)
+    // console.log("Adding product to cart. Product Id", id)
     set((state) => {
-      console.log("Current state", state);
+      // console.log("Current state", state);
       //Getting the current product using the id passed in 
       const product = state.products.find(currentProduct => id === currentProduct.id);
-      console.log('Product to add', product)
+      // console.log('Product to add', product)
 
       if(!product) {
         return state;

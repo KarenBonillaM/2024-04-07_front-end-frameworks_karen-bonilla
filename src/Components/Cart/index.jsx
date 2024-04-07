@@ -10,8 +10,7 @@ function Cart() {
   function handleDeleteItem(id) {
     deleteProductFromCart(id);
   }
-  console.log(cart, "cart")
-  console.log(getCartTotal());
+  
   return (
     <div className="cart-container">
       <div className="checkout-header">
@@ -38,7 +37,7 @@ function Cart() {
         <div className="checkout-total">
           <h3>Order Summary</h3>
           <p>Cart total: {getCartTotal().toFixed(2)} SEK</p>
-          <NavLink to="/checkoutSuccess" className="nav-link checkout-link">
+          <NavLink to="/checkoutSuccess" className="nav-link checkout-button">
             <button onClick={clearCart} className="checkout-button">Checkout</button>
           </NavLink>
         </div>

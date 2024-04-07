@@ -32,8 +32,13 @@ ul .nav-link:hover {
   color: black;
 }
 
-.cart {
+.cart-icon {
   position: relative;
+  cursor: pointer;
+}
+
+.cart-icon:hover{
+  color: blue;
 }
 
 .number-items-in-cart {
@@ -89,6 +94,7 @@ ul .nav-link:hover {
   color: yellow;
   padding: 3px 5px;
   border-radius: 10px;
+  margin-right: 40px;
 }
 
 .logo:hover {

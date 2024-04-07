@@ -19,7 +19,7 @@ function HomePage() {
     <main className='page-body home-page-body'>
       
       <div className='intro-container'>
-        <h1>Products</h1>
+        <h1>The ShopNet, your favorite online store</h1>
       </div>
       <SearchBar onSearch={handleSearch}/>
       <div>
