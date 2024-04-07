@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 2024-04-07_Front-End-Frameworks_Karen-Bonilla
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The ShopNet
 
-## Available Scripts
+Overview
 
-In the project directory, you can run:
+This school project is an e-commerce store built using React. The goal is to apply knowledge of React to create a intuitive, responsive and visually appealing user interface with various pages for an online shop, including the homepage, individual product page, cart page, and checkout success page.
 
-### `npm start`
+The goal of this project is to apply React skills to build a functional e-commerce store. It involves creating multiple pages, fetching data from an API, implementing routing with React Router, and ensuring responsiveness.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Homepage: displaying a list of products with search functionality.
+  -Search Functionality: Users can easily search for specific product using the search bar.
+- Individual product page: Detailing the product information, reviews and add to cart feature.
+- Checkout page: Including the cart component where users can visualize the chosen products, quantity and cart total.
+- Checkout success page: Displaying an animation to show the user their order was successfully made.
+- Contact page: with form validation using "yup" library for user inquiries.
 
-### `npm test`
+Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To install and run the project locally, follow these steps:
 
-### `npm run build`
+- Clone the repository:
+  git clone https://github.com/KarenBonillaM/2024-04-07_front-end-frameworks_karen-bonilla.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Install dependencies.
+  npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Usage. This will start the development server and open the project in your default web browser.
+  npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Explore the different features, search for products, add them to the cart and experience the online shopping.
 
-### `npm run eject`
+Functionalities
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Home Page:
+  displays all the products available. Every listing card has a (view product) button that redirects to the individual product page.
+  The page contains a search bar that filters products when typing in a product name.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Individual Product Page:
+  displays data for a single product. The product card includes a "Add to cart" button which, upon clicking, adds the product to the cart.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Checkout Page :
+  displays a list all of the products included in the cart as well as a total. The checkout page has a Checkout button. Clicking this Checkout button then goes to a Checkout success page.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- CheckoutSuccess Page :
+  displays a message and an animation to the user notifying them that their order was successful.
 
-## Learn More
+Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was created by Karen Bonilla.
+HomePage image from Unsplash.
+Checkout success animation from LottieFiles
+License
