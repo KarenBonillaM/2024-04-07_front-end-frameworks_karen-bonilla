@@ -6,6 +6,8 @@
   width: 100%;
   display: flex;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  padding-top: 30px;
+  border-radius: 7px;
 }
 
 .single-product-image {
@@ -67,18 +69,13 @@
     display: grid;
   }
 
-  /* .single-product-details {
-    width: 88%;
-    margin: auto;
-  } */
-
   .single-product-image {
     max-width: 200px;
     max-height: 300px;
     justify-self: center;
-}
+  }
 
-.product-info button {
+  .product-info button {
   width: 150px;
-}
+  }
 }

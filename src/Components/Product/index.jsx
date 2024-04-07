@@ -41,7 +41,7 @@ export function Product() {
               <UseDiscountedPrice price={product.price} discount={product.discountedPrice}/>
               <p className="discounted-price">Discounted Price: {product.discountedPrice}</p>
               <p className="price">Price: {product.price}</p>
-              <button onClick={onAddToCartClick}>Add to the cart</button>
+              <button onClick={onAddToCartClick}>Add to cart</button>
             </div>
             <div className="reviews-container">
               <h3>Reviews</h3>
