@@ -4,6 +4,10 @@
   margin-bottom: 60px;
 }
 
+.contact-form p {
+  color: red;
+}
+
 .contact-phrase {
   font-size: 1.5em;
   font-weight: bold;
@@ -33,6 +37,12 @@ form :placeholder-shown {
   font-size: 1em;
 }
 
+textarea:placeholder-shown {
+  padding-left: 15px;
+  padding-top: 15px;
+  font-size: 1.2em;
+}
+
 form input, form textarea {
   width: 96%;
   border-radius: 8px;
@@ -47,7 +57,7 @@ textarea {
 .submit {
   border-radius: 5px;
   height: 45px;
-  width: 400px;
+  width: 100%;
   background-color: black;
   color: white;
   font-weight: bold;
@@ -57,4 +67,23 @@ textarea {
 
 .submit:hover {
   background-color: #D99C2B;
+}
+
+
+ @media screen and (min-width: 768px) and
+(max-width: 1023px) {
+  .contact-body {
+    width: 60%;
+  }
+}
+
+@media screen and
+(max-width: 767px) {
+  .contact-body {
+    width: 80%;
+  }
+
+  form input,form textarea {
+    width: 92%;
+  }
 }

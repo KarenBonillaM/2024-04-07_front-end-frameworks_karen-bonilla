@@ -39,7 +39,7 @@ function ContactForm() {
         <form onSubmit={handleSubmit(onSubmit)} className='contact-form'>
           <div>
             <div className='form-element'>
-              <label htmlFor='full-name'>Name</label>
+              <label htmlFor='full-name'>*<strong>Name</strong> (required)</label>
               <input name='full-name' 
               placeholder='Alba Andersson'{...register("fullName")} />
             </div>
@@ -47,25 +47,25 @@ function ContactForm() {
           </div>
           <div>
             <div className='form-element'>
-              <label htmlFor='subject'>Subject</label>
+              <label htmlFor='subject'>* <strong>Subject</strong> (required)</label>
               <input 
               name='subject'
-              placeholder='Subject'{...register("subject")} />
+              placeholder='Enter a subject'{...register("subject")} />
             </div>
             <p>{errors.subject?.message}</p>
           </div>
           <div>
             <div className='form-element'>
-              <label htmlFor='email'>Email</label>
+              <label htmlFor='email'>* <strong>Email</strong> (required)</label>
               <input 
               name='email'
-              placeholder='Email'{...register("email")} />
+              placeholder='Enter your email'{...register("email")} />
             </div>
             <p>{errors.email?.message}</p>
           </div>
           <div>
             <div className='form-element'>
-              <label htmlFor='body'>Message</label>
+              <label htmlFor='body'>* <strong>Message</strong> (required)</label>
               <textarea 
               name='body'
               placeholder='Message'{...register("body")} />
