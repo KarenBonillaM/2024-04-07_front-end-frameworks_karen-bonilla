@@ -15,15 +15,18 @@ const SearchBar = ({ onSearch }) => {
   }
 
   return (
-    <form className='search-container' onKeyUp={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Search"
-        className="search"
-        value={query}
-        onChange={handleInputChange}
-      />
-      <button type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+    <form className='search-container flex justify-center' onKeyUp={handleSubmit}>
+      <div className="flex justify-between h-14 w-4/5 p-2 border border-gray-300 shadow-md rounded-md shadow-slate-200 lg:w-1/2">
+        <input
+          type="text"
+          placeholder="Search"
+          className="search w-full p-2 rounded-l-md border-none focus:outline-none"
+          value={query}
+          onChange={handleInputChange}
+        />
+        <button type="submit" className="p-1 bg-blue-600 w-10 rounded-full text-white hover:bg-blue-500">
+          <FontAwesomeIcon icon={faMagnifyingGlass} /></button>
+      </div>
     </form>
   );
 }

@@ -21,6 +21,11 @@
   padding: 15px 25px;
 }
 
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
 .cart-items-container {
   width: 65%;
 }

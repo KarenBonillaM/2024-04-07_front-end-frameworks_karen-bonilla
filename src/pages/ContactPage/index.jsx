@@ -2,12 +2,11 @@ import ContactForm from "../../Components/Forms";
 
 function ContactPage() {
   return (
-    <main className="page-body contact-body">
-      <h1>Contact</h1>
-      <p className="contact-phrase">Get in touch with us</p>
+    <main className="grow contact-body p-8">
+      <h1 className="text-center text-2xl">Contact</h1>
       <ContactForm />
     </main>
   );
 }
 
-export default ContactPage; 
+export default ContactPage;
